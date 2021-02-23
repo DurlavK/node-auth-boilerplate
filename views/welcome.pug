@@ -1,0 +1,8 @@
+extends layout 
+
+block content 
+  div(class='text-center mt-2 max-w-lg p-2 mx-auto flex flex-col items-center border')
+    i(class='fab fa-node-js fa-5x')
+    p(class='mb-2') Create an account or login 
+    a(href='/users/register' class='border my-1 w-full bg-green-500') Register
+    a(href='users/login' class='border my-1 w-full bg-blue-500') Login

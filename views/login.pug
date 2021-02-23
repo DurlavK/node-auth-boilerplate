@@ -1,0 +1,18 @@
+extends layout 
+
+block content
+  div(class='flex flex-col items-center mt-4')
+    div 
+      i(class='fas fa-user fa-2x mb-2')
+      span(class='text-2xl') LogIn
+    form(action='login' method='POST')
+      div(class='flex flex-col')
+        label(for="email") Email
+        input#email(type="email" name='email' placeholder='Enter Email' class='' value=(undefined===user ? '' : user.email)) 
+      div(class='flex flex-col') 
+        label(for="password") Password
+        input#password(type="password" name='password' placeholder='Enter Password' class='') 
+      button(type='submit' class='w-full my-2 border bg-blue-500') Submit
+    p(class='') Don't have Account?
+      a(href='register' class='text-green-500') Register
+      
